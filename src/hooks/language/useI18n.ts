@@ -8,9 +8,7 @@ const changeLanguage = (lang: SupportedLanguages) => {
 
 const toggleLanguage = () => {
   i18next.changeLanguage(
-    i18next.language === SupportedLanguages.EN_EN
-      ? SupportedLanguages.FR_FR
-      : SupportedLanguages.EN_EN,
+      SupportedLanguages.EN_EN
   );
 };
 

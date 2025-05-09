@@ -109,13 +109,13 @@ function Example() {
               <IconByVariant path={'theme'} stroke={colors.purple500} />
             </TouchableOpacity>
 
-            <TouchableOpacity
+            {/*<TouchableOpacity
               onPress={toggleLanguage}
               style={[components.buttonCircle, gutters.marginBottom_16]}
               testID="change-language-button"
             >
               <IconByVariant path={'language'} stroke={colors.purple500} />
-            </TouchableOpacity>
+            </TouchableOpacity>*/}
           </View>
         </View>
       </ScrollView>
