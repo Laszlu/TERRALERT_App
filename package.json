@@ -6,8 +6,11 @@
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react-native-popup-menu": "^0.17.0"
+  },
   "devDependencies": {
+    "react-native-side-menu": "^1.1.3",
     "typescript": "^5.5.3"
   },
   "private": true
