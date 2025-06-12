@@ -1,4 +1,9 @@
 {
   "name": "Terralert",
-  "displayName": "Terralert"
+  "displayName": "Terralert",
+  "extra": {
+    "eas": {
+      "projectId": "f5aa2597-2897-4772-97e2-2a48c4ade8a5"
+    }
+  }
 }

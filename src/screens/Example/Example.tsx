@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Alert, ScrollView, Text, TouchableOpacity, View } from 'react-native';
-
 import { useTheme } from '@/theme';
 import { useI18n, useUser } from '@/hooks';
 
 import { AssetByVariant, IconByVariant, Skeleton } from '@/components/atoms';
 import { SafeScreen } from '@/components/templates';
+import TopMenu from "@/navigation/TopMenu";
+
 
 function Example() {
   const { t } = useTranslation();
@@ -25,6 +26,8 @@ function Example() {
   } = useTheme();
 
   const [currentId, setCurrentId] = useState(-1);
+
+  const [menuVisibility, toggleMenuVisibility] = useState(false);
 
   const fetchOneUserQuery = useFetchOneQuery(currentId);
 
@@ -46,6 +49,10 @@ function Example() {
       onResetError={fetchOneUserQuery.refetch}
     >
       <ScrollView>
+        <View style={{display: menuVisibility ? 'flex' : 'none'}}>
+          <TopMenu></TopMenu>
+        </View>
+
         <View
           style={[
             layout.justifyCenter,
@@ -100,6 +107,12 @@ function Example() {
                 <IconByVariant path={'send'} stroke={colors.purple500} />
               </TouchableOpacity>
             </Skeleton>
+
+            <TouchableOpacity style={[components.buttonCircle, gutters.marginBottom_16]}
+                              onPress={() => toggleMenuVisibility(!menuVisibility)}
+            >
+              <IconByVariant path={'menu'} stroke={colors.purple500}/>
+            </TouchableOpacity>
 
             <TouchableOpacity
               onPress={onChangeTheme}

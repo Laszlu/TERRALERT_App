@@ -7,6 +7,7 @@ export const enum Variant {
 }
 
 const colorsLight = {
+  lightgraySeeThrough: 'rgba(195,195,195,0.8)',
   gray100: '#DFDFDF',
   gray200: '#A1A1A1',
   gray400: '#4D4D4D',

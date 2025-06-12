@@ -21,5 +21,11 @@ export default ({ backgrounds, fonts, layout }: ComponentTheme) => {
       height: 250,
       width: 250,
     },
+    rectangleFullwidth: {
+      borderRadius: 20,
+      ...layout.justifyBetween,
+      ...layout.fitContent,
+      ...layout.fullWidth,
+    }
   } as const satisfies AllStyle;
 };
