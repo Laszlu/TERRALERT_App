@@ -8,9 +8,9 @@ import { ThemeProvider } from '@/theme';
 import { SupportedLanguages } from '@/hooks/language/schema';
 import i18n from '@/translations';
 
-import Example from './Example';
+import MainScreen from './MainScreen';
 
-describe('Example screen should render correctly', () => {
+describe('MainScreen screen should render correctly', () => {
   let storage: MMKV;
   const queryClient = new QueryClient({
     defaultOptions: {
@@ -34,7 +34,7 @@ describe('Example screen should render correctly', () => {
         <ThemeProvider storage={storage}>
           <I18nextProvider i18n={i18n}>
             <QueryClientProvider client={queryClient}>
-              <Example />
+              <MainScreen />
             </QueryClientProvider>
           </I18nextProvider>
         </ThemeProvider>
@@ -58,7 +58,7 @@ describe('Example screen should render correctly', () => {
         <ThemeProvider storage={storage}>
           <I18nextProvider i18n={i18n}>
             <QueryClientProvider client={queryClient}>
-              <Example />
+              <MainScreen />
             </QueryClientProvider>
           </I18nextProvider>
         </ThemeProvider>

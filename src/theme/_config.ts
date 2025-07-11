@@ -18,6 +18,8 @@ const colorsLight = {
   purple500: '#44427D',
   red500: '#C13333',
   skeleton: '#A1A1A1',
+  greenSeeThrough: 'rgba(41, 245, 39, 0.8)',
+  blue: 'rgba(38, 99, 241, 1)',
 } as const;
 
 const colorsDark = {
@@ -31,6 +33,8 @@ const colorsDark = {
   purple500: '#A6A4F0',
   red500: '#C13333',
   skeleton: '#303030',
+  greenSeeThrough: 'rgba(26, 123, 25, 0.8)',
+  blue: 'rgba(26, 66, 158, 1)',
 } as const;
 
 const sizes = [12, 16, 24, 32, 40, 80] as const;

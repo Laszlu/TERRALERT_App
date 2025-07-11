@@ -53,8 +53,14 @@ export default {
   fullWidth: {
     width: '100%',
   },
-  fitContent: {
+  fitContent_height: {
     height: 'auto',
+  },
+  fitContent_width: {
+    width: 'auto',
+  },
+  width_80: {
+    width: '80%'
   },
   /* Positions */
   absolute: {
