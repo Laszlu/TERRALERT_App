@@ -23,6 +23,7 @@ const colorsLight = {
 } as const;
 
 const colorsDark = {
+  lightgraySeeThrough: 'rgba(195,195,195,0.8)',
   gray100: '#000000',
   gray200: '#BABABA',
   gray400: '#969696',
@@ -30,7 +31,6 @@ const colorsDark = {
   gray800: '#E0E0E0',
   purple100: '#252732',
   purple50: '#1B1A23',
-  purple500: '#A6A4F0',
   red500: '#C13333',
   skeleton: '#303030',
   greenSeeThrough: 'rgba(26, 123, 25, 0.8)',
